@@ -1,7 +1,7 @@
-.app {
+section.app {
   display: grid;
   margin: 2% 0;
-  grid-gap: 10px;
+  grid-gap: 1%;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   place-items: center;
   background-color: #f0fefb;
@@ -9,14 +9,20 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .app {
+@media (max-width: 1179px) {
+  section.app {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 889px) {
+  section.app {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 480px) {
-  .app {
+@media (max-width: 599px) {
+  section.app {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
